@@ -13,18 +13,22 @@
   font: inherit;
   line-height: inherit;
 }
-input, textarea, button {
+input,
+textarea,
+button {
   color: inherit;
   background: transparent;
 }
-a, button, input[type=submit] {
+a,
+button,
+input[type="submit"] {
   cursor: pointer;
 }
 
 html {
   font-size: 5vw;
 }
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 800px) {
   html {
     font-size: 2vw;
   }
@@ -90,10 +94,10 @@ main {
 
     &.about {
       flex: 1 0 auto;
-      @media only screen and (min-width: 800px){
+      @media only screen and (min-width: 800px) {
         padding-right: 33%;
       }
-      @media only screen and (min-width: 1400px){
+      @media only screen and (min-width: 1400px) {
         padding-right: 50%;
       }
     }
@@ -114,7 +118,5 @@ main {
         }
       }
     }
-
   }
-
 }
