@@ -1,9 +1,23 @@
 <script>
 	import Form from "./components/Form.svelte";
+
+	console.log('encoding.group');
+
+	let footer;
+	let showForm = false;
+	function openForm(){
+		showForm = true;
+		let scrollTo = footer.offsetTop;
+		console.log( scrollTo );
+		window.scrollTo(0, scrollTop );
+
+	}
 </script>
 
+<!-- encoding.group -->
+
 <header>
-    <h1>encoding.group</h1>
+	<h1>encoding.group</h1>
 </header>
 
 <main>
@@ -13,27 +27,38 @@
 	<p>Get in touch with us, to find out how we can encode your ideas into digital worlds.</p>
 </main>
 
-<footer>
-	<button>Say hello!</button>
-</footer>
+{#if showForm === false}
 
-<Form />
+	<footer>
+		<button on:click={openForm}>Say hello!</button>
+	</footer>
+
+{:else}
+
+	<aside>
+		<Form />
+	</aside>
+
+{/if}
 
 <style>
 	header {
-        margin: 1rem 2rem;
+        margin: 1rem 1rem;
     }
     h1 {
         text-align: center;
     }
 	main {
-		margin: 44vh 3rem;
+		margin: 44vh 1rem;
 	}
 	p + p {
-		text-indent: 2rem;
+		text-indent: 1em;
 	}
 	footer {
-		margin: 2rem 1rem;
 		text-align: center;
+		padding: 1rem;
+	}
+	aside {
+		overflow: hidden;
 	}
 </style>

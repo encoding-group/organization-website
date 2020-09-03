@@ -35,16 +35,21 @@ form, input, textarea, button {
 	padding: 0;
 	color: inherit;
 	border: none;
+	outline: none;
 }
 button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 /* design */
 html {
-	font-size: 3.2em;
+	font-size: 4em;
+	font-family: "Arial", sans-serif;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -61,4 +66,8 @@ body {
 }
 ::placeholder {
 	color: #333;
+}
+
+::selection {
+	background-color: blue;
 }

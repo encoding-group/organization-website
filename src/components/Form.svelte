@@ -33,8 +33,8 @@
 <style>
 
     form {
-        height: 100vh;
         padding: 1rem;
+        height: 100vh;
         display: flex;
         flex-direction: column;
     }
