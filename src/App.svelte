@@ -28,6 +28,10 @@
   main {
     margin: 44vh 1rem;
   }
+  p {
+    hyphens: auto;
+	  -webkit-hyphens: auto;
+  }
   p + p {
     text-indent: 1em;
   }
