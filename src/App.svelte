@@ -20,7 +20,7 @@
 
 <style>
   header {
-    margin: 1rem 1rem;
+    margin: 1rem;
   }
   h1 {
     text-align: center;
@@ -37,6 +37,18 @@
   }
   aside {
     overflow: hidden;
+  }
+  @media only screen and (orientation: portrait) {
+    header {
+      margin: 0.5rem;
+    }
+    main {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    footer {
+      padding: 0.5rem;
+    }
   }
 </style>
 

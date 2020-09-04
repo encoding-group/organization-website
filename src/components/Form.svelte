@@ -6,46 +6,6 @@
   }
 </script>
 
-<style>
-  form {
-    padding: 1rem;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .fields {
-    text-align: left;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  label {
-    display: flex;
-    width: 100%;
-  }
-  label > span {
-    display: inline-block;
-    margin-right: 0.5rem;
-    min-width: 3rem;
-  }
-  label > input {
-    flex: 1;
-  }
-  textarea {
-    width: 100%;
-    height: 100%;
-    resize: none;
-    overflow-y: auto;
-  }
-  .message {
-    margin: 0.5rem 0;
-    flex: 1;
-  }
-  .buttons {
-    text-align: center;
-  }
-</style>
-
 <aside>
   <form name="contact" method="POST">
     <input type="hidden" name="form-name" value="contact" />
@@ -64,3 +24,57 @@
     <p class="buttons"><button type="submit">Send</button></p>
   </form>
 </aside>
+
+<style>
+  form {
+    padding: 1rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+  }
+  .fields {
+    text-align: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    display: flex;
+    width: 100%;
+  }
+  label > span {
+    display: inline-block;
+    margin-right: 0.5rem;
+    min-width: 2.6em;
+  }
+  label > input {
+    flex: 1;
+  }
+  .message {
+    margin: 0.5rem 0;
+    flex: 1;
+  }
+  textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    overflow-y: auto;
+  }
+  .buttons {
+    text-align: center;
+  }
+  @media only screen and (min-width: 500px) {
+    form {
+      font-size: 1rem;
+    }
+  }
+  @media only screen and (orientation: portrait) {
+    form {
+      padding: 0.5rem;
+    }
+    .message {
+      margin: 0.2rem 0;
+    }
+  }
+</style>
