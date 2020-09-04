@@ -47,7 +47,8 @@
 </style>
 
 <aside>
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="contact" method="POST">
+    <input type="hidden" name="form-name" value="contact" />
     <div class="fields">
       <p>
         <label><span>To:</span><input type="text" name="to" value="mail@encoding.group" disabled /></label>
