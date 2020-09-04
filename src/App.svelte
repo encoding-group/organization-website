@@ -3,13 +3,18 @@
 
   console.log("encoding.group");
 
-  let footer;
+  let position;
   let showForm = false;
   function openForm() {
     showForm = true;
-    let scrollTo = footer.offsetTop;
-    console.log(scrollTo);
-    window.scrollTo(0, scrollTop);
+    let scrollTo = position.offsetTop;
+    setTimeout(()=>{
+      window.scrollTo({
+        top: scrollTo,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }, 50);
   }
 </script>
 
@@ -59,6 +64,8 @@
     worlds.
   </p>
 </main>
+
+<div bind:this={position}></div>
 
 {#if showForm === false}
   <footer><button on:click={openForm}>Say hello!</button></footer>
