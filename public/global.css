@@ -96,3 +96,16 @@ body {
 ::selection {
 	background-color: blue;
 }
+
+button {
+    transition: letter-spacing 200ms ease;
+    letter-spacing: 0;
+}
+button:hover {
+    letter-spacing: 0.08em;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

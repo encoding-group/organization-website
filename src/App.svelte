@@ -20,13 +20,15 @@
 
 <style>
   header {
-    margin: 1rem;
+    margin: 1rem 0.5rem;
+    animation: fadein 1s;
   }
   h1 {
     text-align: center;
   }
   main {
     margin: 44vh 1rem;
+    animation: fadein 2s;
   }
   p {
     hyphens: auto;
@@ -38,8 +40,14 @@
   footer {
     text-align: center;
     padding: 1rem;
+    animation: fadein 2s;
   }
   aside {
+    overflow: hidden;
+    animation: fadein 2s;
+  }
+  header, main, footer {
+    max-width: 100vw;
     overflow: hidden;
   }
   @media only screen and (orientation: portrait) {
