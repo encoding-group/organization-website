@@ -45,9 +45,16 @@ button {
 	user-select: none;
 }
 
+/* webfont */
+@font-face {
+	font-family: 'Raster';
+	src:  url('./FKRasterGrotesk-Smooth.woff2') format('woff2'),
+		  url('./FKRasterGrotesk-Smooth.woff') format('woff');
+}
+
 /* design */
 html {
-	font-family: "Arial", sans-serif;
+	font-family: "Raster", Helvetica Neue, Helvetica, Arial, sans-serif;
 	scroll-behavior: smooth;
 }
 
@@ -73,7 +80,7 @@ html {
 body {
 	background-color: #000;
 	color: #fff;
-	line-height: 1;
+	line-height: 1.2;
 }
 
 ::-webkit-input-placeholder {
